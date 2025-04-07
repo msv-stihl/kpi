@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="images/icon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPI Manserv</title>
+    <script src="https://cdn.plot.ly/plotly-3.0.1.min.js" charset="utf-8"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!--Top menu -->
+        <div class="sidebar">
+            <div class="profile">
+                <img src="images/icon_gray.png" alt="profile_picture">
+            </div>
+            <ul>
+                <li>
+                    <a href="#" id="icon_seg">
+                        <span class="icon"><i class="fas fa-hard-hat"></i></span>
+                        <span class="item" onMouseDown="drawSeg()">Segurança</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="icon_fac">
+                        <span class="icon"><i class="fas fa-tools"></i></span>
+                        <span class="item" onMouseDown="updateFAC()">Facilities</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="icon_spi">
+                        <span class="icon"><i class="fas fa-fire-extinguisher"></i></span>
+                        <span class="item" onMouseDown="updateSPI()">SPCI</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="icon_lsi">
+                        <span class="icon"><i class="fas fa-broom"></i></span>
+                        <span class="item" onMouseDown="updateLSI()">LSI</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="icon_wpa">
+                        <span class="icon"><i class="fas fa-dolly-flatbed"></i></span>
+                        <span class="item" onMouseDown="updateWPA()">Benevides</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="icon_wsp">
+                        <span class="icon"><i class="fas fa-dolly-flatbed"></i></span>
+                        <span class="item" onMouseDown="updateWSP()">Jundiaí</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="icon_sat">
+                        <span class="icon"><i class="fas fa-medal"></i></span>
+                        <span class="item">Satisf. Cliente</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="icon_a7s">
+                        <span class="icon"><i class="fas fa-clipboard-check"></i></span>
+                        <span class="item">Programa 7S</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="content">
+                <div id="seguranca"></div>
+                <div id="facilities">
+                    <div id="facilities-tma"></div>
+                    <div id="facilities-retrabalho"></div>
+                    <div id="facilities-zus"></div>
+                    <div id="facilities-prev-civ"></div>
+                    <div id="facilities-prev-ele"></div>
+                    <div id="facilities-prev-ref"></div>
+                    <div id="facilities-envelhecimento"></div>
+                    <div id="facilities-ise"></div>
+                    <div id="facilities-acidentes"></div>
+                    <div id="facilities-7s"></div>
+                    <div id="facilities-satisfacao"></div>
+                </div>
+                <div id="spci">
+                    <div id="spci-tma"></div>
+                    <div id="spci-retrabalho"></div>
+                    <div id="spci-zus"></div>
+                    <div id="spci-prev"></div>
+                    <div id="spci-7s"></div>
+                    <div id="spci-satisfacao"></div>
+                </div>
+                <div id="lsi">
+                    <div id="lsi-cump-lc"></div>
+                    <div id="lsi-cump-li"></div>
+                    <div id="lsi-cump-jd"></div>
+                    <div id="lsi-efic-lc"></div>
+                    <div id="lsi-efic-li"></div>
+                    <div id="lsi-efic-jd"></div>
+                    <div id="lsi-zus"></div>
+                    <div id="lsi-acidentes"></div>
+                    <div id="lsi-satisfacao"></div>
+                </div>
+                <div id="benevides">
+                    <div id="benevides-tma"></div>
+                    <div id="benevides-zus"></div>
+                    <div id="benevides-preventivas"></div>
+                    <div id="benevides-7s"></div>
+                    <div id="benevides-satisfacao"></div>
+                </div>
+                <div id="jundiai">
+                    <div id="jundiai-tma"></div>
+                    <div id="jundiai-zus"></div>
+                    <div id="jundiai-preventivas"></div>
+                    <div id="jundiai-7s"></div>
+                    <div id="jundiai-satisfacao"></div>
+                </div>
+                <div id="satisfacao"></div>
+                <div id="7s"></div>
+            </div>
+        </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script src="math.js"></script>
+</body>
+</html>
