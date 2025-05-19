@@ -4,8 +4,6 @@ var hamburger = document.querySelector(".hamburger");
     })
 
 function plotBars(tag, gTitle, xArray, yArray){
-    //const xArray = ["Italy","France","Spain","USA","Argentina"];
-    //const yArray = [55, 49, 44, 24, 15];
 
     const data = [{
         x: xArray,

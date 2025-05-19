@@ -124,11 +124,11 @@ totalprevELE, totalprevREF) {
         {
           type: "indicator",
           mode: "gauge+number",
-          value: tma,  // Current speed or value
+          value: tma,
           title: { text: "TMA", font: { size: 24 } },
           gauge: {
-            axis: { range: [0, 12], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-            bar: { color: "rgb(0, 153, 51)" },  // Color of the speed pointer
+            axis: { range: [0, 12], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },
+            bar: { color: "rgb(0, 153, 51)" },
             steps: [
               { range: [0, 8], color: "rgb(237,237,237)" },
               { range: [8, 10], color: "rgb(255,70,10)" },
@@ -145,8 +145,8 @@ totalprevELE, totalprevREF) {
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-        plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)',  
+        plot_bgcolor: 'rgba(0,0,0,0)'  
       };
     
       Plotly.newPlot('facilities-tma', data, layout);
@@ -156,11 +156,11 @@ totalprevELE, totalprevREF) {
         {
           type: "indicator",
           mode: "gauge+number",
-          value: retrabalho.toFixed(2),  // Current speed or value
+          value: retrabalho.toFixed(2),  
           title: { text: "Retrabalho", font: { size: 24 } },
           gauge: {
-            axis: { range: [0, 1], tickwidth: 0.3, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-            bar: { color: "rgb(0, 153, 51)" },  // Color of the speed pointer
+            axis: { range: [0, 1], tickwidth: 0.3, tickcolor: "rgb(0, 153, 51)" },
+            bar: { color: "rgb(0, 153, 51)" },  
             steps: [
               { range: [0, 1], color: "rgb(237,237,237)" }
             ]
@@ -175,8 +175,8 @@ totalprevELE, totalprevREF) {
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-        plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)',  
+        plot_bgcolor: 'rgba(0,0,0,0)'  
       };
     
       Plotly.newPlot('facilities-retrabalho', data2, layout2);
@@ -194,11 +194,11 @@ totalprevELE, totalprevREF) {
         {
           type: "indicator",
           mode: "gauge+number",
-          value: quantZUs,  // Current speed or value
+          value: quantZUs,  
           title: { text: "1º Atendimento ZU", font: { size: 24 } },
           gauge: {
-            axis: { range: [0, 1], tickwidth: 0.3, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-            bar: { color: zuColor },  // Color of the speed pointer
+            axis: { range: [0, 1], tickwidth: 0.3, tickcolor: "rgb(0, 153, 51)" }, 
+            bar: { color: zuColor },  
             steps: [
               { range: [0, 1], color: "rgb(237,237,237)" }
             ]
@@ -213,8 +213,8 @@ totalprevELE, totalprevREF) {
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-        plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)', 
+        plot_bgcolor: 'rgba(0,0,0,0)' 
       };
     
       Plotly.newPlot('facilities-zus', data3, layout3);
@@ -229,12 +229,12 @@ totalprevELE, totalprevREF) {
         marker: {
           color: 'green'
         },
-        text: [preventivasCIV],  // The text values to show on top of each bar
-        textposition: 'inside',  // Position the text inside the bar
-        insidetextanchor: 'middle',  // Center the text inside the bar
+        text: [preventivasCIV],  
+        textposition: 'inside',  
+        insidetextanchor: 'middle', 
         textfont: {
             size: 44,
-            color: 'white',  // Change text color
+            color: 'white', 
             family: 'Arial'
           }
       };
@@ -247,12 +247,12 @@ totalprevELE, totalprevREF) {
         marker: {
           color: 'red'
         },
-        text: [totalprevCIV-preventivasCIV],  // The text values to show on top of each bar
-        textposition: 'inside',  // Position the text inside the bar
-        insidetextanchor: 'middle',  // Center the text inside the bar
+        text: [totalprevCIV-preventivasCIV],  
+        textposition: 'inside',  
+        insidetextanchor: 'middle', 
         textfont: {
             size: 44,
-            color: 'white',  // Change text color
+            color: 'white', 
             family: 'Arial'
           }
       };
@@ -267,7 +267,7 @@ totalprevELE, totalprevREF) {
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)', 
         plot_bgcolor: 'rgba(0,0,0,0)'
       };
       
@@ -282,12 +282,12 @@ totalprevELE, totalprevREF) {
         marker: {
           color: 'green'
         },
-        text: [preventivasELE],  // The text values to show on top of each bar
-        textposition: 'inside',  // Position the text inside the bar
-        insidetextanchor: 'middle',  // Center the text inside the bar
+        text: [preventivasELE],  
+        textposition: 'inside', 
+        insidetextanchor: 'middle', 
         textfont: {
             size: 44,
-            color: 'white',  // Change text color
+            color: 'white', 
             family: 'Arial'
           }
       };
@@ -300,12 +300,12 @@ totalprevELE, totalprevREF) {
         marker: {
           color: 'red'
         },
-        text: [totalprevELE-preventivasELE],  // The text values to show on top of each bar
-        textposition: 'inside',  // Position the text inside the bar
-        insidetextanchor: 'middle',  // Center the text inside the bar
+        text: [totalprevELE-preventivasELE], 
+        textposition: 'inside',  
+        insidetextanchor: 'middle',
         textfont: {
             size: 44,
-            color: 'white',  // Change text color
+            color: 'white', 
             family: 'Arial'
           }
       };
@@ -320,7 +320,7 @@ totalprevELE, totalprevREF) {
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)', 
         plot_bgcolor: 'rgba(0,0,0,0)'
       };
       
@@ -335,12 +335,12 @@ totalprevELE, totalprevREF) {
         marker: {
           color: 'green'
         },
-        text: [preventivasREF],  // The text values to show on top of each bar
-        textposition: 'inside',  // Position the text inside the bar
-        insidetextanchor: 'middle',  // Center the text inside the bar
+        text: [preventivasREF], 
+        textposition: 'inside', 
+        insidetextanchor: 'middle',
         textfont: {
             size: 44,
-            color: 'white',  // Change text color
+            color: 'white', 
             family: 'Arial'
           }
       };
@@ -353,12 +353,12 @@ totalprevELE, totalprevREF) {
         marker: {
           color: 'red'
         },
-        text: [totalprevREF-preventivasREF],  // The text values to show on top of each bar
-        textposition: 'inside',  // Position the text inside the bar
-        insidetextanchor: 'middle',  // Center the text inside the bar
+        text: [totalprevREF-preventivasREF], 
+        textposition: 'inside',
+        insidetextanchor: 'middle',  
         textfont: {
             size: 44,
-            color: 'white',  // Change text color
+            color: 'white',  
             family: 'Arial'
           }
       };
@@ -373,7 +373,7 @@ totalprevELE, totalprevREF) {
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)', 
         plot_bgcolor: 'rgba(0,0,0,0)'
       };
       
@@ -381,21 +381,21 @@ totalprevELE, totalprevREF) {
 
       //Envelhecimento
       var data7 = [{
-        x: ['Chamados'],  // Categories
-        y: [envelhecimento],  // Values for each category
-        type: 'bar',  // The bar chart (which is essentially a column chart)
+        x: ['Chamados'],  
+        y: [envelhecimento], 
+        type: 'bar',  
         marker: {
-            color: 'rgb(255,70,10)'  // Single color for all columns
+            color: 'rgb(255,70,10)'  
         },
-        text: [envelhecimento],  // The text values to show on top of each bar
-        textposition: 'inside',  // Position the text inside the bar
-        insidetextanchor: 'middle',  // Center the text inside the bar
+        text: [envelhecimento], 
+        textposition: 'inside',  
+        insidetextanchor: 'middle', 
         textfont: {
             size: 44,
-            color: 'white',  // Change text color
+            color: 'white', 
             family: 'Arial'
           },
-        hoverinfo: 'x+y+text'  // Display the value when hovering
+        hoverinfo: 'x+y+text' 
       }];
       
       var layout7 = {
@@ -405,8 +405,8 @@ totalprevELE, totalprevREF) {
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-        plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)', 
+        plot_bgcolor: 'rgba(0,0,0,0)' 
       };
       
       Plotly.newPlot('facilities-envelhecimento', data7, layout7);
@@ -416,11 +416,11 @@ totalprevELE, totalprevREF) {
         {
           type: "indicator",
           mode: "gauge+number",
-          value: percentISE,  // Current speed or value
+          value: percentISE, 
           title: { text: "Atendimento ISE", font: { size: 24 } },
           gauge: {
-            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-            bar: { color: "rgb(255, 70, 10)" },  // Color of the speed pointer
+            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" }, 
+            bar: { color: "rgb(255, 70, 10)" },  
             steps: [
               { range: [0, 90], color: "rgb(237,237,237)" },
               { range: [90, 100], color: "green" }
@@ -436,8 +436,8 @@ totalprevELE, totalprevREF) {
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-        plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)', 
+        plot_bgcolor: 'rgba(0,0,0,0)' 
       };
     
       Plotly.newPlot('facilities-ise', data8, layout8);
@@ -447,11 +447,11 @@ totalprevELE, totalprevREF) {
         {
           type: "indicator",
           mode: "gauge+number",
-          value: acidentes.toFixed(2),  // Current speed or value
+          value: acidentes.toFixed(2), 
           title: { text: "Acidentes", font: { size: 24 } },
           gauge: {
-            axis: { range: [0, 1], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-            bar: { color: "rgb(255, 70, 10)" },  // Color of the speed pointer
+            axis: { range: [0, 1], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },
+            bar: { color: "rgb(255, 70, 10)" }, 
             steps: [
               { range: [0, 1], color: "rgb(237,237,237)" }
             ]
@@ -466,8 +466,8 @@ totalprevELE, totalprevREF) {
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-        plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)',  
+        plot_bgcolor: 'rgba(0,0,0,0)'  
       };
     
       Plotly.newPlot('facilities-acidentes', data9, layout9);
@@ -477,11 +477,11 @@ totalprevELE, totalprevREF) {
         {
           type: "indicator",
           mode: "gauge+number",
-          value: avaliacao7s.toFixed(2),  // Current speed or value
+          value: avaliacao7s.toFixed(2),
           title: { text: "Avaliação 7S", font: { size: 24 } },
           gauge: {
-            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-            bar: { color: "rgb(35,35,35)" },  // Color of the speed pointer
+            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" }, 
+            bar: { color: "rgb(35,35,35)" }, 
             steps: [
               { range: [0, 85], color: "rgb(237,237,237)" },
               { range: [85, 100], color: "rgb(255,70,10)" }
@@ -497,8 +497,8 @@ totalprevELE, totalprevREF) {
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-        plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)', 
+        plot_bgcolor: 'rgba(0,0,0,0)'  
       };
     
       Plotly.newPlot('facilities-7s', data10, layout10);
@@ -508,11 +508,11 @@ totalprevELE, totalprevREF) {
         {
           type: "indicator",
           mode: "gauge+number",
-          value: satisfcli.toFixed(2),  // Current speed or value
+          value: satisfcli.toFixed(2), 
           title: { text: "Satisfação Cliente", font: { size: 24 } },
           gauge: {
-            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-            bar: { color: "rgb(35,35,35)" },  // Color of the speed pointer
+            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" }, 
+            bar: { color: "rgb(35,35,35)" },  
             steps: [
               { range: [0, 85], color: "rgb(237,237,237)" },
               { range: [85, 100], color: "rgb(255,70,10)" }
@@ -528,8 +528,8 @@ totalprevELE, totalprevREF) {
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-        plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)', 
+        plot_bgcolor: 'rgba(0,0,0,0)'  
       };
     
       Plotly.newPlot('facilities-satisfacao', data11, layout11);
@@ -607,11 +607,11 @@ function plotSpi(tma, retrabalho, zus, quantZUs, preventivasSPI, totalprevSPI,
         {
           type: "indicator",
           mode: "gauge+number",
-          value: tma,  // Current speed or value
+          value: tma, 
           title: { text: "TMA", font: { size: 24 } },
           gauge: {
-            axis: { range: [0, 12], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-            bar: { color: "rgb(0, 153, 51)" },  // Color of the speed pointer
+            axis: { range: [0, 12], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" }, 
+            bar: { color: "rgb(0, 153, 51)" }, 
             steps: [
               { range: [0, 8], color: "rgb(237,237,237)" },
               { range: [8, 10], color: "rgb(255,70,10)" },
@@ -628,8 +628,8 @@ function plotSpi(tma, retrabalho, zus, quantZUs, preventivasSPI, totalprevSPI,
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-        plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)', 
+        plot_bgcolor: 'rgba(0,0,0,0)' 
       };
     
       Plotly.newPlot('spci-tma', data, layout);
@@ -639,11 +639,11 @@ function plotSpi(tma, retrabalho, zus, quantZUs, preventivasSPI, totalprevSPI,
         {
           type: "indicator",
           mode: "gauge+number",
-          value: retrabalho.toFixed(2),  // Current speed or value
+          value: retrabalho.toFixed(2), 
           title: { text: "Retrabalho", font: { size: 24 } },
           gauge: {
-            axis: { range: [0, 1], tickwidth: 0.3, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-            bar: { color: "rgb(0, 153, 51)" },  // Color of the speed pointer
+            axis: { range: [0, 1], tickwidth: 0.3, tickcolor: "rgb(0, 153, 51)" }, 
+            bar: { color: "rgb(0, 153, 51)" },  
             steps: [
               { range: [0, 1], color: "rgb(237,237,237)" }
             ]
@@ -658,8 +658,8 @@ function plotSpi(tma, retrabalho, zus, quantZUs, preventivasSPI, totalprevSPI,
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-        plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)',  
+        plot_bgcolor: 'rgba(0,0,0,0)'  
       };
     
       Plotly.newPlot('spci-retrabalho', data2, layout2);
@@ -677,11 +677,11 @@ function plotSpi(tma, retrabalho, zus, quantZUs, preventivasSPI, totalprevSPI,
         {
           type: "indicator",
           mode: "gauge+number",
-          value: quantZUs,  // Current speed or value
+          value: quantZUs, 
           title: { text: "1º Atendimento ZU", font: { size: 24 } },
           gauge: {
-            axis: { range: [0, 1], tickwidth: 0.3, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-            bar: { color: zuColor },  // Color of the speed pointer
+            axis: { range: [0, 1], tickwidth: 0.3, tickcolor: "rgb(0, 153, 51)" }, 
+            bar: { color: zuColor }, 
             steps: [
               { range: [0, 1], color: "rgb(237,237,237)" }
             ]
@@ -696,8 +696,8 @@ function plotSpi(tma, retrabalho, zus, quantZUs, preventivasSPI, totalprevSPI,
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-        plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)', 
+        plot_bgcolor: 'rgba(0,0,0,0)' 
       };
     
       Plotly.newPlot('spci-zus', data3, layout3);
@@ -712,12 +712,12 @@ function plotSpi(tma, retrabalho, zus, quantZUs, preventivasSPI, totalprevSPI,
         marker: {
           color: 'green'
         },
-        text: [preventivasSPI],  // The text values to show on top of each bar
-        textposition: 'inside',  // Position the text inside the bar
-        insidetextanchor: 'middle',  // Center the text inside the bar
+        text: [preventivasSPI],  
+        textposition: 'inside',  
+        insidetextanchor: 'middle', 
         textfont: {
             size: 44,
-            color: 'white',  // Change text color
+            color: 'white', 
             family: 'Arial'
           }
       };
@@ -730,12 +730,12 @@ function plotSpi(tma, retrabalho, zus, quantZUs, preventivasSPI, totalprevSPI,
         marker: {
           color: 'red'
         },
-        text: [totalprevSPI-preventivasSPI],  // The text values to show on top of each bar
-        textposition: 'inside',  // Position the text inside the bar
-        insidetextanchor: 'middle',  // Center the text inside the bar
+        text: [totalprevSPI-preventivasSPI], 
+        textposition: 'inside',  
+        insidetextanchor: 'middle', 
         textfont: {
             size: 44,
-            color: 'white',  // Change text color
+            color: 'white', 
             family: 'Arial'
           }
       };
@@ -750,7 +750,7 @@ function plotSpi(tma, retrabalho, zus, quantZUs, preventivasSPI, totalprevSPI,
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)', 
         plot_bgcolor: 'rgba(0,0,0,0)'
       };
       
@@ -761,11 +761,11 @@ function plotSpi(tma, retrabalho, zus, quantZUs, preventivasSPI, totalprevSPI,
         {
           type: "indicator",
           mode: "gauge+number",
-          value: avaliacao7s.toFixed(2),  // Current speed or value
+          value: avaliacao7s.toFixed(2), 
           title: { text: "Avaliação 7S", font: { size: 24 } },
           gauge: {
-            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-            bar: { color: "rgb(35,35,35)" },  // Color of the speed pointer
+            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" }, 
+            bar: { color: "rgb(35,35,35)" }, 
             steps: [
               { range: [0, 85], color: "rgb(237,237,237)" },
               { range: [85, 100], color: "rgb(255,70,10)" }
@@ -781,8 +781,8 @@ function plotSpi(tma, retrabalho, zus, quantZUs, preventivasSPI, totalprevSPI,
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-        plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)', 
+        plot_bgcolor: 'rgba(0,0,0,0)'  
       };
     
       Plotly.newPlot('spci-7s', data5, layout5);
@@ -792,11 +792,11 @@ function plotSpi(tma, retrabalho, zus, quantZUs, preventivasSPI, totalprevSPI,
         {
           type: "indicator",
           mode: "gauge+number",
-          value: satisfcli.toFixed(2),  // Current speed or value
+          value: satisfcli.toFixed(2), 
           title: { text: "Satisfação Cliente", font: { size: 24 } },
           gauge: {
-            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-            bar: { color: "rgb(35,35,35)" },  // Color of the speed pointer
+            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" }, 
+            bar: { color: "rgb(35,35,35)" }, 
             steps: [
               { range: [0, 85], color: "rgb(237,237,237)" },
               { range: [85, 100], color: "rgb(255,70,10)" }
@@ -812,8 +812,8 @@ function plotSpi(tma, retrabalho, zus, quantZUs, preventivasSPI, totalprevSPI,
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-        plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)',  
+        plot_bgcolor: 'rgba(0,0,0,0)'  
       };
     
       Plotly.newPlot('spci-satisfacao', data6, layout6);
@@ -888,11 +888,11 @@ function plotLsi(cronogramaLCO, cronogramaLTE, cronogramaJAR, eficaciaLCO, efica
         {
           type: "indicator",
           mode: "gauge+number",
-          value: cronogramaLCO,  // Current speed or value
+          value: cronogramaLCO, 
           title: { text: "Cronograma LC", font: { size: 24 } },
           gauge: {
-            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-            bar: { color: "rgb(35,35,35)" },  // Color of the speed pointer
+            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" }, 
+            bar: { color: "rgb(35,35,35)" },  
             steps: [
               { range: [0, 90], color: "rgb(237,237,237)" },
               { range: [90, 100], color: "rgb(255,70,10)" }
@@ -908,8 +908,8 @@ function plotLsi(cronogramaLCO, cronogramaLTE, cronogramaJAR, eficaciaLCO, efica
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-        plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)',  
+        plot_bgcolor: 'rgba(0,0,0,0)'   
       };
     
       Plotly.newPlot('lsi-cump-lc', data, layout);
@@ -919,11 +919,11 @@ function plotLsi(cronogramaLCO, cronogramaLTE, cronogramaJAR, eficaciaLCO, efica
         {
           type: "indicator",
           mode: "gauge+number",
-          value: cronogramaLTE,  // Current speed or value
+          value: cronogramaLTE, 
           title: { text: "Cronograma LI", font: { size: 24 } },
           gauge: {
-            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-            bar: { color: "rgb(35,35,35)" },  // Color of the speed pointer
+            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" }, 
+            bar: { color: "rgb(35,35,35)" }, 
             steps: [
               { range: [0, 95], color: "rgb(237,237,237)" },
               { range: [95, 100], color: "rgb(255,70,10)" }
@@ -939,8 +939,8 @@ function plotLsi(cronogramaLCO, cronogramaLTE, cronogramaJAR, eficaciaLCO, efica
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-        plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)', 
+        plot_bgcolor: 'rgba(0,0,0,0)'  
       };
     
       Plotly.newPlot('lsi-cump-li', data2, layout2);
@@ -950,11 +950,11 @@ function plotLsi(cronogramaLCO, cronogramaLTE, cronogramaJAR, eficaciaLCO, efica
         {
           type: "indicator",
           mode: "gauge+number",
-          value: cronogramaJAR,  // Current speed or value
+          value: cronogramaJAR,  
           title: { text: "Cronograma JD", font: { size: 24 } },
           gauge: {
-            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-            bar: { color: "rgb(35,35,35)" },  // Color of the speed pointer
+            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" }, 
+            bar: { color: "rgb(35,35,35)" }, 
             steps: [
               { range: [0, 95], color: "rgb(237,237,237)" },
               { range: [95, 100], color: "rgb(255,70,10)" }
@@ -970,8 +970,8 @@ function plotLsi(cronogramaLCO, cronogramaLTE, cronogramaJAR, eficaciaLCO, efica
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-        plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)',  
+        plot_bgcolor: 'rgba(0,0,0,0)'   
       };
     
       Plotly.newPlot('lsi-cump-jd', data3, layout3);
@@ -981,11 +981,11 @@ function plotLsi(cronogramaLCO, cronogramaLTE, cronogramaJAR, eficaciaLCO, efica
         {
           type: "indicator",
           mode: "gauge+number",
-          value: eficaciaLCO,  // Current speed or value
+          value: eficaciaLCO,  
           title: { text: "Eficácia LC", font: { size: 24 } },
           gauge: {
-            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-            bar: { color: "rgb(35,35,35)" },  // Color of the speed pointer
+            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" }, 
+            bar: { color: "rgb(35,35,35)" },  
             steps: [
               { range: [0, 85], color: "rgb(237,237,237)" },
               { range: [85, 100], color: "rgb(255,70,10)" }
@@ -1001,8 +1001,8 @@ function plotLsi(cronogramaLCO, cronogramaLTE, cronogramaJAR, eficaciaLCO, efica
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-        plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)',  
+        plot_bgcolor: 'rgba(0,0,0,0)'   
       };
     
       Plotly.newPlot('lsi-efic-lc', data4, layout4);
@@ -1012,11 +1012,11 @@ function plotLsi(cronogramaLCO, cronogramaLTE, cronogramaJAR, eficaciaLCO, efica
         {
           type: "indicator",
           mode: "gauge+number",
-          value: eficaciaLTE,  // Current speed or value
+          value: eficaciaLTE,  
           title: { text: "Eficácia LI", font: { size: 24 } },
           gauge: {
-            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-            bar: { color: "rgb(35,35,35)" },  // Color of the speed pointer
+            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" }, 
+            bar: { color: "rgb(35,35,35)" },  
             steps: [
               { range: [0, 85], color: "rgb(237,237,237)" },
               { range: [85, 100], color: "rgb(255,70,10)" }
@@ -1032,8 +1032,8 @@ function plotLsi(cronogramaLCO, cronogramaLTE, cronogramaJAR, eficaciaLCO, efica
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-        plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)',  
+        plot_bgcolor: 'rgba(0,0,0,0)'   
       };
     
       Plotly.newPlot('lsi-efic-li', data5, layout5);
@@ -1043,11 +1043,11 @@ function plotLsi(cronogramaLCO, cronogramaLTE, cronogramaJAR, eficaciaLCO, efica
         {
           type: "indicator",
           mode: "gauge+number",
-          value: eficaciaJAR,  // Current speed or value
+          value: eficaciaJAR, 
           title: { text: "Eficácia JD", font: { size: 24 } },
           gauge: {
-            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-            bar: { color: "rgb(35,35,35)" },  // Color of the speed pointer
+            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" }, 
+            bar: { color: "rgb(35,35,35)" }, 
             steps: [
               { range: [0, 85], color: "rgb(237,237,237)" },
               { range: [85, 100], color: "rgb(255,70,10)" }
@@ -1063,8 +1063,8 @@ function plotLsi(cronogramaLCO, cronogramaLTE, cronogramaJAR, eficaciaLCO, efica
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-        plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)',  
+        plot_bgcolor: 'rgba(0,0,0,0)'  
       };
     
       Plotly.newPlot('lsi-efic-jd', data6, layout6);
@@ -1082,11 +1082,11 @@ function plotLsi(cronogramaLCO, cronogramaLTE, cronogramaJAR, eficaciaLCO, efica
         {
           type: "indicator",
           mode: "gauge+number",
-          value: quantZUs,  // Current speed or value
+          value: quantZUs, 
           title: { text: "1º Atendimento ZU", font: { size: 24 } },
           gauge: {
-            axis: { range: [0, 1], tickwidth: 0.3, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-            bar: { color: zuColor },  // Color of the speed pointer
+            axis: { range: [0, 1], tickwidth: 0.3, tickcolor: "rgb(0, 153, 51)" }, 
+            bar: { color: zuColor }, 
             steps: [
               { range: [0, 1], color: "rgb(237,237,237)" }
             ]
@@ -1101,8 +1101,8 @@ function plotLsi(cronogramaLCO, cronogramaLTE, cronogramaJAR, eficaciaLCO, efica
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-        plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)',  
+        plot_bgcolor: 'rgba(0,0,0,0)'   
       };
     
       Plotly.newPlot('lsi-zus', data7, layout7);
@@ -1112,11 +1112,11 @@ function plotLsi(cronogramaLCO, cronogramaLTE, cronogramaJAR, eficaciaLCO, efica
         {
           type: "indicator",
           mode: "gauge+number",
-          value: acidentes,  // Current speed or value
+          value: acidentes, 
           title: { text: "Acidentes", font: { size: 24 } },
           gauge: {
-            axis: { range: [0, 1], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-            bar: { color: "rgb(35,35,35)" },  // Color of the speed pointer
+            axis: { range: [0, 1], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" }, 
+            bar: { color: "rgb(35,35,35)" },  
             steps: [
               { range: [0, 1], color: "rgb(237,237,237)" }
             ]
@@ -1131,8 +1131,8 @@ function plotLsi(cronogramaLCO, cronogramaLTE, cronogramaJAR, eficaciaLCO, efica
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-        plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)', 
+        plot_bgcolor: 'rgba(0,0,0,0)'   
       };
     
       Plotly.newPlot('lsi-acidentes', data8, layout8);
@@ -1142,11 +1142,11 @@ function plotLsi(cronogramaLCO, cronogramaLTE, cronogramaJAR, eficaciaLCO, efica
         {
           type: "indicator",
           mode: "gauge+number",
-          value: satisfcli.toFixed(2),  // Current speed or value
+          value: satisfcli.toFixed(2), 
           title: { text: "Satisfação Cliente", font: { size: 24 } },
           gauge: {
-            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-            bar: { color: "rgb(35,35,35)" },  // Color of the speed pointer
+            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" }, 
+            bar: { color: "rgb(35,35,35)" },  
             steps: [
               { range: [0, 85], color: "rgb(237,237,237)" },
               { range: [85, 100], color: "rgb(255,70,10)" }
@@ -1162,8 +1162,8 @@ function plotLsi(cronogramaLCO, cronogramaLTE, cronogramaJAR, eficaciaLCO, efica
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-        plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)',  
+        plot_bgcolor: 'rgba(0,0,0,0)'  
       };
     
       Plotly.newPlot('lsi-satisfacao', data9, layout9);
@@ -1230,11 +1230,11 @@ function plotWpa(tma, zus, quantZUs, preventivas, totalprev, avaliacao7s, satisf
         {
           type: "indicator",
           mode: "gauge+number",
-          value: tma,  // Current speed or value
+          value: tma, 
           title: { text: "TMA", font: { size: 24 } },
           gauge: {
-            axis: { range: [0, 12], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-            bar: { color: "rgb(0, 153, 51)" },  // Color of the speed pointer
+            axis: { range: [0, 12], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" }, 
+            bar: { color: "rgb(0, 153, 51)" }, 
             steps: [
               { range: [0, 8], color: "rgb(237,237,237)" },
               { range: [8, 10], color: "rgb(255,70,10)" },
@@ -1251,8 +1251,8 @@ function plotWpa(tma, zus, quantZUs, preventivas, totalprev, avaliacao7s, satisf
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-        plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)',  
+        plot_bgcolor: 'rgba(0,0,0,0)'   
       };
     
       Plotly.newPlot('benevides-tma', data, layout);
@@ -1270,11 +1270,11 @@ function plotWpa(tma, zus, quantZUs, preventivas, totalprev, avaliacao7s, satisf
         {
           type: "indicator",
           mode: "gauge+number",
-          value: quantZUs,  // Current speed or value
+          value: quantZUs,  
           title: { text: "1º Atendimento ZU", font: { size: 24 } },
           gauge: {
-            axis: { range: [0, 1], tickwidth: 0.3, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-            bar: { color: zuColor },  // Color of the speed pointer
+            axis: { range: [0, 1], tickwidth: 0.3, tickcolor: "rgb(0, 153, 51)" },  
+            bar: { color: zuColor },  
             steps: [
               { range: [0, 1], color: "rgb(237,237,237)" }
             ]
@@ -1289,8 +1289,8 @@ function plotWpa(tma, zus, quantZUs, preventivas, totalprev, avaliacao7s, satisf
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-        plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)',  
+        plot_bgcolor: 'rgba(0,0,0,0)'   
       };
     
       Plotly.newPlot('benevides-zus', data3, layout3);
@@ -1305,12 +1305,12 @@ function plotWpa(tma, zus, quantZUs, preventivas, totalprev, avaliacao7s, satisf
         marker: {
           color: 'green'
         },
-        text: [preventivas],  // The text values to show on top of each bar
-        textposition: 'inside',  // Position the text inside the bar
-        insidetextanchor: 'middle',  // Center the text inside the bar
+        text: [preventivas], 
+        textposition: 'inside', 
+        insidetextanchor: 'middle', 
         textfont: {
             size: 44,
-            color: 'white',  // Change text color
+            color: 'white', 
             family: 'Arial'
           }
       };
@@ -1323,12 +1323,12 @@ function plotWpa(tma, zus, quantZUs, preventivas, totalprev, avaliacao7s, satisf
         marker: {
           color: 'red'
         },
-        text: [totalprev-preventivas],  // The text values to show on top of each bar
-        textposition: 'inside',  // Position the text inside the bar
-        insidetextanchor: 'middle',  // Center the text inside the bar
+        text: [totalprev-preventivas], 
+        textposition: 'inside',  
+        insidetextanchor: 'middle', 
         textfont: {
             size: 44,
-            color: 'white',  // Change text color
+            color: 'white', 
             family: 'Arial'
           }
       };
@@ -1343,7 +1343,7 @@ function plotWpa(tma, zus, quantZUs, preventivas, totalprev, avaliacao7s, satisf
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)', 
         plot_bgcolor: 'rgba(0,0,0,0)'
       };
       
@@ -1354,11 +1354,11 @@ function plotWpa(tma, zus, quantZUs, preventivas, totalprev, avaliacao7s, satisf
         {
           type: "indicator",
           mode: "gauge+number",
-          value: avaliacao7s,  // Current speed or value
+          value: avaliacao7s, 
           title: { text: "Avaliação 7S", font: { size: 24 } },
           gauge: {
-            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-            bar: { color: "rgb(35,35,35)" },  // Color of the speed pointer
+            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },  
+            bar: { color: "rgb(35,35,35)" }, 
             steps: [
               { range: [0, 85], color: "rgb(237,237,237)" },
               { range: [85, 100], color: "rgb(255,70,10)" }
@@ -1374,8 +1374,8 @@ function plotWpa(tma, zus, quantZUs, preventivas, totalprev, avaliacao7s, satisf
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-        plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)', 
+        plot_bgcolor: 'rgba(0,0,0,0)' 
       };
     
       Plotly.newPlot('benevides-7s', data5, layout5);
@@ -1385,11 +1385,11 @@ function plotWpa(tma, zus, quantZUs, preventivas, totalprev, avaliacao7s, satisf
         {
           type: "indicator",
           mode: "gauge+number",
-          value: satisfcli,  // Current speed or value
+          value: satisfcli,  
           title: { text: "Satisfação Cliente", font: { size: 24 } },
           gauge: {
-            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-            bar: { color: "rgb(35,35,35)" },  // Color of the speed pointer
+            axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" }, 
+            bar: { color: "rgb(35,35,35)" }, 
             steps: [
               { range: [0, 85], color: "rgb(237,237,237)" },
               { range: [85, 100], color: "rgb(255,70,10)" }
@@ -1405,8 +1405,8 @@ function plotWpa(tma, zus, quantZUs, preventivas, totalprev, avaliacao7s, satisf
         font: {
             color: 'white'
         },
-        paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-        plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+        paper_bgcolor: 'rgba(0,0,0,0)',  
+        plot_bgcolor: 'rgba(0,0,0,0)'  
       };
     
       Plotly.newPlot('benevides-satisfacao', data6, layout6);
@@ -1473,11 +1473,11 @@ function plotWsp(tma, zus, quantZUs, preventivas, totalprev, avaliacao7s, satisf
       {
         type: "indicator",
         mode: "gauge+number",
-        value: tma,  // Current speed or value
+        value: tma,  
         title: { text: "TMA", font: { size: 24 } },
         gauge: {
-          axis: { range: [0, 12], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-          bar: { color: "rgb(0, 153, 51)" },  // Color of the speed pointer
+          axis: { range: [0, 12], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" }, 
+          bar: { color: "rgb(0, 153, 51)" }, 
           steps: [
             { range: [0, 8], color: "rgb(237,237,237)" },
             { range: [8, 10], color: "rgb(255,70,10)" },
@@ -1494,8 +1494,8 @@ function plotWsp(tma, zus, quantZUs, preventivas, totalprev, avaliacao7s, satisf
       font: {
           color: 'white'
       },
-      paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-      plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+      paper_bgcolor: 'rgba(0,0,0,0)', 
+      plot_bgcolor: 'rgba(0,0,0,0)'  
     };
   
     Plotly.newPlot('jundiai-tma', data, layout);
@@ -1513,11 +1513,11 @@ function plotWsp(tma, zus, quantZUs, preventivas, totalprev, avaliacao7s, satisf
       {
         type: "indicator",
         mode: "gauge+number",
-        value: quantZUs,  // Current speed or value
+        value: quantZUs,  
         title: { text: "1º Atendimento ZU", font: { size: 24 } },
         gauge: {
-          axis: { range: [0, 1], tickwidth: 0.3, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-          bar: { color: zuColor },  // Color of the speed pointer
+          axis: { range: [0, 1], tickwidth: 0.3, tickcolor: "rgb(0, 153, 51)" }, 
+          bar: { color: zuColor }, 
           steps: [
             { range: [0, 1], color: "rgb(237,237,237)" }
           ]
@@ -1532,8 +1532,8 @@ function plotWsp(tma, zus, quantZUs, preventivas, totalprev, avaliacao7s, satisf
       font: {
           color: 'white'
       },
-      paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-      plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+      paper_bgcolor: 'rgba(0,0,0,0)',  
+      plot_bgcolor: 'rgba(0,0,0,0)'  
     };
   
     Plotly.newPlot('jundiai-zus', data3, layout3);
@@ -1548,12 +1548,12 @@ function plotWsp(tma, zus, quantZUs, preventivas, totalprev, avaliacao7s, satisf
       marker: {
         color: 'green'
       },
-      text: [preventivas],  // The text values to show on top of each bar
-      textposition: 'inside',  // Position the text inside the bar
-      insidetextanchor: 'middle',  // Center the text inside the bar
+      text: [preventivas],  
+      textposition: 'inside',  
+      insidetextanchor: 'middle', 
       textfont: {
           size: 44,
-          color: 'white',  // Change text color
+          color: 'white', 
           family: 'Arial'
         }
     };
@@ -1566,12 +1566,12 @@ function plotWsp(tma, zus, quantZUs, preventivas, totalprev, avaliacao7s, satisf
       marker: {
         color: 'red'
       },
-      text: [totalprev-preventivas],  // The text values to show on top of each bar
-      textposition: 'inside',  // Position the text inside the bar
-      insidetextanchor: 'middle',  // Center the text inside the bar
+      text: [totalprev-preventivas], 
+      textposition: 'inside', 
+      insidetextanchor: 'middle',
       textfont: {
           size: 44,
-          color: 'white',  // Change text color
+          color: 'white', 
           family: 'Arial'
         }
     };
@@ -1586,7 +1586,7 @@ function plotWsp(tma, zus, quantZUs, preventivas, totalprev, avaliacao7s, satisf
       font: {
           color: 'white'
       },
-      paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
+      paper_bgcolor: 'rgba(0,0,0,0)',
       plot_bgcolor: 'rgba(0,0,0,0)'
     };
     
@@ -1597,11 +1597,11 @@ function plotWsp(tma, zus, quantZUs, preventivas, totalprev, avaliacao7s, satisf
       {
         type: "indicator",
         mode: "gauge+number",
-        value: avaliacao7s,  // Current speed or value
+        value: avaliacao7s,  
         title: { text: "Avaliação 7S", font: { size: 24 } },
         gauge: {
-          axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-          bar: { color: "rgb(35,35,35)" },  // Color of the speed pointer
+          axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },
+          bar: { color: "rgb(35,35,35)" },  
           steps: [
             { range: [0, 85], color: "rgb(237,237,237)" },
             { range: [85, 100], color: "rgb(255,70,10)" }
@@ -1617,8 +1617,8 @@ function plotWsp(tma, zus, quantZUs, preventivas, totalprev, avaliacao7s, satisf
       font: {
           color: 'white'
       },
-      paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-      plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+      paper_bgcolor: 'rgba(0,0,0,0)',  
+      plot_bgcolor: 'rgba(0,0,0,0)'    
     };
   
     Plotly.newPlot('jundiai-7s', data5, layout5);
@@ -1628,11 +1628,11 @@ function plotWsp(tma, zus, quantZUs, preventivas, totalprev, avaliacao7s, satisf
       {
         type: "indicator",
         mode: "gauge+number",
-        value: satisfcli,  // Current speed or value
+        value: satisfcli,  
         title: { text: "Satisfação Cliente", font: { size: 24 } },
         gauge: {
-          axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },  // Speed range (0 to 100)
-          bar: { color: "rgb(35,35,35)" },  // Color of the speed pointer
+          axis: { range: [0, 100], tickwidth: 1, tickcolor: "rgb(0, 153, 51)" },
+          bar: { color: "rgb(35,35,35)" },  
           steps: [
             { range: [0, 85], color: "rgb(237,237,237)" },
             { range: [85, 100], color: "rgb(255,70,10)" }
@@ -1648,8 +1648,8 @@ function plotWsp(tma, zus, quantZUs, preventivas, totalprev, avaliacao7s, satisf
       font: {
           color: 'white'
       },
-      paper_bgcolor: 'rgba(0,0,0,0)',  // Makes the chart background transparent
-      plot_bgcolor: 'rgba(0,0,0,0)'    // Makes the plot area background transparent
+      paper_bgcolor: 'rgba(0,0,0,0)',  
+      plot_bgcolor: 'rgba(0,0,0,0)'  
     };
   
     Plotly.newPlot('jundiai-satisfacao', data6, layout6);
